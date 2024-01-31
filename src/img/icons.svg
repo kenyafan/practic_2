@@ -11,7 +11,7 @@
       <path stroke-linecap="round" stroke-width="4.364"
         d="m2.909 18.909 10.46 10.46a1.455 1.455 0 0 0 2.185-.146L35.636 2.909" />
     </symbol>
-    <symbol id="play-youtybe" viewBox="0 0 32 32">
+    <symbol id="play-youtube" viewBox="0 0 32 32">
       <path fill="#df3d3a" style="fill:var(--color1, #df3d3a)"
         d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z" />
       <path fill="#fff" style="fill:var(--color2, #fff)" opacity=".8"
