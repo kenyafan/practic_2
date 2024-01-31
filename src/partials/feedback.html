@@ -1,0 +1,122 @@
+<section class="feedback">
+  <div class="container">
+    <div class="feedback-inner">
+      <picture>
+        <!-- desk -->
+        <source
+          media="(min-width: 1440px)"
+          type="image/webp"
+          srcset="
+            ./img/desk/feedback-desk@1x.webp 1x,
+            ./img/desk/feedback-desk@2x.webp 2x
+          "
+        />
+        <source
+          media=" (min-width: 1440px)"
+          type="image/png"
+          srcset="
+            ./img/desk/feedback-desk@1x.png 1x,
+            ./img/desk/feedback-desk@2x.png 2x
+          "
+        />
+        <!-- tab -->
+        <source
+          media="(min-width: 768px)"
+          type="image/webp"
+          srcset="
+            ./img/tab/feedback-tab@1x.webp 1x,
+            ./img/tab/feedback-tab@2x.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          type="image/png"
+          srcset="
+            ./img/tab/feedback-tab@1x.png 1x,
+            ./img/tab/feedback-tab@2x.png 2x
+          "
+        />
+        <!-- mob -->
+        <source
+          media="(max-width: 320px)"
+          type="image/webp"
+          srcset="
+            ./img/mob/feedback-mob@1x.webp 1x,
+            ./img/mob/feedback-mob@2x.webp 2x
+          "
+        />
+        <source
+          media="(max-width: 320px)"
+          type="image/png"
+          srcset="
+            ./img/mob/feedback-mob@1x.png 1x,
+            ./img/mob/feedback-mob@2x.png 2x
+          "
+        />
+        <img
+          src="./img/mob/feedback-mob@1x.webp"
+          loading="lazy"
+          type="image/webp"
+          width="280"
+          height="235"
+          alt="girl with headphones on the table"
+        />
+      </picture>
+      <div class="title-container">
+        <h2 class="feedback-title">Feedback</h2>
+        <p class="feedback-text">
+          We'll help you find the right headphones for you.
+        </p>
+      </div>
+      <form name="feedback">
+        <label for="name"></label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          required
+        />
+        <label for="email"></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your e-mail"
+          required
+        />
+        <label for="user-message"></label>
+        <textarea
+          name="user-message"
+          id="user-message"
+          placeholder="Send us a message"
+        ></textarea>
+        <div class="checkbox-container">
+          <input
+            class="visually-hidden checkbox"
+            id="user-privacy"
+            type="checkbox"
+            name="user-privacy"
+            value="true"
+          />
+          <label class="form-label" for="user-privacy">
+            <span class="form-label-span">
+              <svg class="svg-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-click"></use>
+              </svg>
+            </span>
+            I agree to the
+            <a
+              class="form-label-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Privacy Policy</a
+            >
+          </label>
+        </div>
+        <button type="submit">send</button>
+      </form>
+    </div>
+  </div>
+</section>

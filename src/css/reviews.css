@@ -1,0 +1,45 @@
+.slider-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.reviews-inner {
+  flex: 0 0 100%;
+  display: none;
+}
+
+.img-container {
+  position: relative;
+}
+
+.video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white; /* Колір значка кнопки */
+  cursor: pointer;
+}
+
+.paginator-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginator-item {
+  margin: 0 5px;
+}
+
+.paginator-item button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.paginator-item button:hover {
+  background-color: #ccc;
+}
