@@ -1,0 +1,124 @@
+.hero {
+  padding-top: 17px;
+  padding-bottom: 26px;
+}
+
+.hero-text {
+  max-width: 222px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.hero-desk {
+  max-width: 93px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.hero-title {
+  color: rgb(231, 231, 231);
+  font-family: Gilroy;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 2%;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.hero-btn {
+  background-color: rgb(223, 61, 58);
+  width: 100%;
+  padding: 19px 0;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.hero-img {
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 37px;
+    padding-bottom: 50px;
+  }
+  .hero-inner {
+    position: relative;
+  }
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.45;
+    max-width: 253px;
+  }
+  .hero-desk {
+    margin-bottom: 105px;
+    font-size: 16px;
+    line-height: 1.45;
+    max-width: 110px;
+  }
+  .hero-title {
+    width: 289px;
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+  .hero-btn {
+    width: 294px;
+    margin: 0;
+  }
+  .hero-img {
+    position: absolute;
+    width: 354px;
+    height: 394px;
+    top: 0;
+    right: -60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 37px;
+    padding-bottom: 85px;
+  }
+  .hero-text {
+    line-height: 1.25;
+    max-width: 321px;
+    margin-bottom: 36px;
+  }
+  .hero-desk {
+    line-height: 1.25;
+    margin-bottom: 94px;
+  }
+  .hero-title {
+    width: 674px;
+    font-size: 74px;
+    margin-bottom: 86px;
+    margin-left: 110px;
+  }
+
+  .hero-img {
+    width: 700px;
+    height: 598px;
+    right: -80px;
+  }
+
+  .hero-btn {
+    width: 400px;
+    margin-bottom: 90px;
+    padding: 22px 0 21px;
+    font-size: 20px;
+  }
+}

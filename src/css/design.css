@@ -1,0 +1,38 @@
+.design {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.design-inner {
+}
+.design-title {
+  max-width: 206px;
+  margin-bottom: 32px;
+  color: rgb(231, 231, 231);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.text-title {
+  color: rgb(231, 231, 231);
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.design-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+.design-text:nth-last-child(2) {
+  margin-bottom: 32px;
+}
+.design-img {
+}
