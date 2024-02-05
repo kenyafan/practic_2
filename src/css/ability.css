@@ -55,6 +55,10 @@
   .ability {
     padding: 85px 0;
     padding-left: 190px;
+    padding-right: 80px;
+  }
+  .ability .container {
+    padding: 0;
   }
   .ability-title {
     font-size: 54px;
@@ -64,15 +68,32 @@
   .ability-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 20px;
+    grid-gap: 20px;
+    column-gap: 80px;
     max-width: 981px;
   }
-  .ability-list:nth-child(n + 1) {
-    grid-column: 1;
+  .ability-item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
   }
-  .ability-list:nth-child(n + 4) {
-    grid-column: 2;
+
+  .ability-item:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .ability-item:nth-child(3) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .ability-item:nth-child(4) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .ability-item:nth-child(5) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .ability-item:nth-child(6) {
+    grid-area: 3 / 2 / 4 / 3;
   }
   .ability-item:not(:last-child) {
     margin-bottom: 0;

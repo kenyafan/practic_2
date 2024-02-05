@@ -1,0 +1,105 @@
+.sound {
+  padding: 26px 0;
+}
+.sound-title {
+  color: rgb(231, 231, 231);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.sound-text-box {
+  max-width: 294px;
+}
+.sound-subtitle {
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+}
+.sound-subtitle:first-child {
+  margin-top: 32px;
+}
+.sound-text {
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+}
+.sound-text:not(:last-child) {
+  margin-bottom: 42px;
+}
+
+@media screen and (min-width: 768px) {
+  .sound {
+    padding: 50px 0;
+  }
+  .sound .container {
+    position: relative;
+  }
+  .desc-wrapper {
+    display: flex;
+    gap: 60px;
+  }
+  .sound-title {
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: right;
+    margin-bottom: 357px;
+  }
+  .sound-img {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 768px;
+    height: 293px;
+  }
+  .sound-subtitle:first-child {
+    margin-top: 0px;
+  }
+  .sound-text {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sound {
+    padding: 85px 0;
+  }
+  .sound-title {
+    font-size: 54px;
+    margin-bottom: 624px;
+  }
+  .desc-wrapper {
+    gap: 40px;
+    justify-content: center;
+  }
+  .sound-text-box {
+    max-width: 510px;
+  }
+  .sound-text-box:last-child {
+    max-width: 492px;
+  }
+  .sound-subtitle {
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+  }
+
+  .sound-img {
+    top: 115px;
+    left: 0;
+    width: 1440px;
+    height: 524px;
+  }
+  .sound-text {
+    font-size: 20px;
+  }
+}
