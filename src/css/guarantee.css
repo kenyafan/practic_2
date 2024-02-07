@@ -1,0 +1,121 @@
+.guarantee {
+  padding: 26px 0;
+}
+.guarantee-inner {
+}
+.guarantee-wrapper {
+}
+.guarantee-title {
+  color: rgb(231, 231, 231);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.guarantee-subtitle {
+  max-width: 152px;
+  margin-bottom: 16px;
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0%;
+}
+.guarantee-subtitle::before {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: rgb(223, 61, 58);
+  margin-bottom: 24px;
+  border-radius: 50%;
+}
+.guarantee-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0%;
+}
+.guarantee-text:not(:last-child) {
+  margin-bottom: 24px;
+}
+.guarantee-text:last-child {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .guarantee {
+    padding: 50px 0;
+  }
+  .guarantee-inner {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .guarantee-title {
+    font-size: 30px;
+  }
+  .guarantee-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 289px;
+  }
+  .guarantee-text {
+    max-width: 294px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+  .guarantee-text:not(:last-child) {
+    margin-bottom: 55px;
+    max-width: 250px;
+  }
+  .guarantee-text:last-child {
+    margin-bottom: 17px;
+  }
+  .guarantee-img {
+    width: 354px;
+    height: 442px;
+    position: absolute;
+    top: 0;
+    left: -60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .guarantee {
+    padding: 85px 0;
+  }
+  .guarantee .container {
+    padding-right: 295px;
+  }
+  .guarantee-title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+  .guarantee-subtitle {
+    max-width: 405px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .guarantee-text {
+    font-size: 20px;
+  }
+  .guarantee-text:not(:last-child) {
+    margin-bottom: 69px;
+    max-width: 405px;
+  }
+  .guarantee-text:last-child {
+    margin-bottom: 27px;
+    max-width: 375px;
+  }
+
+  .guarantee-img {
+    width: 590px;
+    height: 565px;
+    position: absolute;
+    top: 0;
+    left: -80px;
+  }
+}

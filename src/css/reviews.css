@@ -1,45 +1,88 @@
+.reviews {
+  padding: 26px 0 8px;
+}
 .slider-container {
   display: flex;
   overflow: hidden;
 }
-
 .reviews-inner {
   flex: 0 0 100%;
   display: none;
 }
-
+.reviews-title {
+  color: rgb(231, 231, 231);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
 .img-container {
   position: relative;
+  margin-bottom: 32px;
 }
-
 .video-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: white; /* Колір значка кнопки */
+  fill: white;
   cursor: pointer;
 }
-
+.reviews-subtitle {
+  color: rgb(223, 61, 58);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+}
+.reviews-text {
+  font-size: 14px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  max-width: 258px;
+  margin-bottom: 32px;
+}
 .paginator-list {
-  list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: start;
+  gap: 14px;
 }
-
+.paginator-item:not(:last-child):after {
+  content: '\005F';
+  display: inline-block;
+  color: rgb(223, 61, 58);
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  margin-left: 20px;
+}
 .paginator-item {
-  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .paginator-item button {
   background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
+  border: none;
+  outline: none;
   cursor: pointer;
+  background-color: transparent;
+  color: rgb(223, 61, 58);
+  font-family: Roboto Condensed;
+  font-size: 20px;
+  line-height: 1.25;
+  letter-spacing: 0%;
 }
-
 .paginator-item button:hover {
   background-color: #ccc;
+}
+.video-modal {
+}
+.modal-content {
+}
+.close {
 }

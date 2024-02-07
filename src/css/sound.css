@@ -23,16 +23,16 @@
   letter-spacing: 0%;
   margin-bottom: 16px;
 }
-.sound-subtitle:first-child {
+.sound-text-box:first-child {
   margin-top: 32px;
+}
+.sound-text-box:last-child {
+  margin-top: 42px;
 }
 .sound-text {
   font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0%;
-}
-.sound-text:not(:last-child) {
-  margin-bottom: 42px;
 }
 
 @media screen and (min-width: 768px) {
@@ -59,7 +59,10 @@
     width: 768px;
     height: 293px;
   }
-  .sound-subtitle:first-child {
+  .sound-text-box:first-child {
+    margin-top: 0px;
+  }
+  .sound-text-box:last-child {
     margin-top: 0px;
   }
   .sound-text {
