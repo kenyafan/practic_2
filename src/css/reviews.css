@@ -105,4 +105,41 @@
     width: 648px;
     height: 417px;
   }
+  .video-btn {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews {
+    padding: 85px 0;
+  }
+  .reviews-title {
+    font-size: 54px;
+  }
+  .reviews-subtitle {
+    font-size: 28px;
+  }
+  .reviews-text {
+    font-size: 20px;
+    line-height: 1.45;
+    max-width: 258px;
+  }
+  .reviews-img {
+    width: 920px;
+    height: 590px;
+  }
+  .video-btn {
+    width: 80px;
+    height: 80px;
+  }
+  .reviews-inner {
+    position: relative;
+  }
+  .img-container {
+    position: absolute;
+    top: 0;
+    left: -80px;
+  }
 }
