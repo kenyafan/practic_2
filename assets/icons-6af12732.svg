@@ -4,8 +4,10 @@
       <path
         d="M0 15.411V0h17.875v11.603C17.875 23.69 11.917 30.489 0 32v-6.346c3.01-.786 5.068-1.934 6.173-3.445 1.167-1.511 1.874-3.777 2.119-6.799H-.001zM25.645 15.411V0H43.52v11.603c0 12.087-5.958 18.886-17.875 20.397v-6.346c3.01-.786 5.068-1.934 6.173-3.445 1.167-1.511 1.874-3.777 2.119-6.799h-8.293z" />
     </symbol>
-    <symbol id="arrow" viewBox="0 0 31 32">
-      <path stroke-width="2.783" d="M1.391 29.783 29.217 1.957m0 0H1.391m27.826 0v27.826" />
+    <symbol id="arrow" viewBox="0 0 32 32">
+      <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9483"
+        d="M1.042 30.957l29.483-29.483M30.526 30.957v-29.483h-29.483">
+      </path>
     </symbol>
     <symbol id="check" viewBox="0 0 38 32">
       <path stroke-linecap="round" stroke-width="4.364"
