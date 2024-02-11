@@ -52,6 +52,7 @@
           srcset="./img/mob/order-mob@1x.png 1x, ./img/mob/order-mob@2x.png 2x"
         />
         <img
+          class="order-img-black"
           src="./img/mob/order-mob@1x.webp"
           width="280"
           height="265"
@@ -113,6 +114,7 @@
           "
         />
         <img
+          class="order-img-white"
           src="./img/mob/order-2-mob@1x.webp"
           width="280"
           height="265"
@@ -121,59 +123,74 @@
           alt="headphones"
         />
       </picture>
-      <div class="btn-container">
-        <button
-          aria-label="chenge color of headphones"
-          type="button"
-          class="order-btn-colorpic"
-        >
-          <svg class="order-icon" width="44" height="44">
-            <use href="./img/icons.svg#circle-black"></use>
-          </svg>
-        </button>
-        <button
-          aria-label="chenge color of headphones"
-          type="button"
-          class="order-btn-colorpic"
-        >
-          <svg class="order-icon" width="44" height="44">
-            <use href="./img/icons.svg#circle-white"></use>
-          </svg>
-        </button>
-      </div>
+
       <ul class="order-list">
-        <li class="order-list-item">
-          <p class="order-list-text">Availability in stores</p>
-          <button
-            aria-label="modal window"
-            class="order-btn-modal"
-            type="button"
-          >
-            <svg class="order-list-icon" width="20" height="20">
-              <use href="#"></use>
-            </svg>
-          </button>
-        </li>
-        <li class="order-list-item">
-          <p class="order-list-text">Characteristics</p>
-          <a href="#" class="order-list-link"
-            ><svg class="order-list-icon" width="20" height="20">
-              <use href="#"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="order-list-item">
-          <p class="order-list-text">Payment and delivery methods</p>
-          <button
-            aria-label="modal window"
-            class="order-btn-modal"
-            type="button"
-          >
-            <svg class="order-list-icon" width="20" height="20">
-              <use href=""></use>
-            </svg>
-          </button>
-        </li>
+        <div class="order-list-item-wrapper">
+          <li class="order-list-item">
+            <div class="btn-container">
+              <button
+                aria-label="change color of headphones"
+                type="button"
+                class="order-btn-colorpic"
+              >
+                <svg class="order-icon" width="44" height="44">
+                  <use href="./img/icons.svg#circle-black"></use>
+                </svg>
+              </button>
+              <button
+                aria-label="change color of headphones"
+                type="button"
+                class="order-btn-colorpic"
+              >
+                <svg class="order-icon" width="44" height="44">
+                  <use href="./img/icons.svg#circle-white"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <span class="order-list-line"></span>
+        </div>
+        <div class="order-list-item-wrapper">
+          <li class="order-list-item">
+            <p class="order-list-text">Availability in stores</p>
+            <button
+              aria-label="modal window"
+              class="order-btn-modal"
+              type="button"
+            >
+              <svg class="order-list-icon" width="20" height="20">
+                <use href="./img/icons.svg#arrow"></use>
+              </svg>
+            </button>
+          </li>
+          <span class="order-list-line"></span>
+        </div>
+        <div class="order-list-item-wrapper">
+          <li class="order-list-item">
+            <p class="order-list-text">Characteristics</p>
+            <a href="#" class="order-list-link"
+              ><svg class="order-list-icon" width="20" height="20">
+                <use href="./img/icons.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <span class="order-list-line"></span>
+        </div>
+        <div class="order-list-item-wrapper">
+          <li class="order-list-item">
+            <p class="order-list-text">Payment and delivery methods</p>
+            <button
+              aria-label="modal window"
+              class="order-btn-modal"
+              type="button"
+            >
+              <svg class="order-list-icon" width="20" height="20">
+                <use href="./img/icons.svg#arrow"></use>
+              </svg>
+            </button>
+          </li>
+          <span class="order-list-line"></span>
+        </div>
       </ul>
       <p class="order-text">14 999 UAH</p>
       <button class="order-btn" type="button">order</button>

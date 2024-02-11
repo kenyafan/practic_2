@@ -1,10 +1,8 @@
+/* #region FAQ */
+
 .FAQ {
   padding-top: 8px;
   padding-bottom: 26px;
-}
-.container {
-}
-.FAQ-inner {
 }
 .FAQ-title {
   color: rgb(231, 231, 231);
@@ -60,6 +58,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   margin-left: 12px;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .FAQ-list-text {
@@ -80,6 +79,54 @@
   display: block;
   margin-bottom: 23px;
 }
-.FAQ-list-line:not(:last-child) {
-  margin-bottom: 24px;
+.FAQ-list-wrapper:not(:last-child) .FAQ-list-line {
+  margin-bottom: 23px;
+}
+
+.FAQ-list-wrapper:last-child .FAQ-list-line {
+  margin-bottom: 0;
+}
+/* #endregion */
+
+@media screen and (min-width: 768px) {
+  .FAQ-list-item:not(:last-child) {
+    margin-bottom: 37px;
+  }
+
+  .FAQ-list-item::before {
+    margin-top: 4px;
+    font-size: 28px;
+  }
+
+  .FAQ-list-text {
+    font-size: 16px;
+    line-height: 1.45;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .FAQ {
+    padding: 85px 190px;
+  }
+  .FAQ-title {
+    font-size: 54px;
+    margin-bottom: 54px;
+  }
+
+  .FAQ-list-item::before {
+    margin-top: 5px;
+    margin-right: 32px;
+    width: 28px;
+    height: 35px;
+  }
+  .FAQ-list-item::after {
+    width: 42px;
+    height: 42px;
+  }
+  .FAQ-list-text {
+    font-size: 28px;
+    line-height: 1.25;
+    font-weight: 600;
+  }
 }

@@ -54,6 +54,7 @@
           "
         />
         <img
+          class="feedback-img"
           src="./img/mob/feedback-mob@1x.webp"
           loading="lazy"
           type="image/webp"
@@ -68,25 +69,30 @@
           We'll help you find the right headphones for you.
         </p>
       </div>
-      <form name="feedback">
+      <form name="feedback" class="feedback-form">
         <label for="name"></label>
         <input
+          class="user-name"
           type="text"
           name="name"
           id="name"
           placeholder="Your name"
+          pattern="[A-Za-z ']{3,}"
           required
         />
         <label for="email"></label>
         <input
+          class="user-email"
           type="email"
           name="email"
           id="email"
           placeholder="Your e-mail"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
           required
         />
         <label for="user-message"></label>
         <textarea
+          class="user-message"
           name="user-message"
           id="user-message"
           placeholder="Send us a message"
@@ -101,8 +107,8 @@
           />
           <label class="form-label" for="user-privacy">
             <span class="form-label-span">
-              <svg class="svg-icon" width="10" height="8">
-                <use href="./img/icons.svg#icon-click"></use>
+              <svg class="svg-icon" width="23" height="19">
+                <use href="./img/icons.svg#check"></use>
               </svg>
             </span>
             I agree to the
@@ -111,11 +117,11 @@
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              >Privacy Policy</a
+              >privacy policy</a
             >
           </label>
         </div>
-        <button type="submit">send</button>
+        <button class="feedback-btn" type="submit">send</button>
       </form>
     </div>
   </div>
