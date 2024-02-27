@@ -164,16 +164,18 @@
 
 @media screen and (min-width: 1440px) {
   .feedback {
-    padding-top: 779px;
+    padding-top: 85px;
     padding-bottom: 85px;
-    position: relative;
   }
   .feedback .container {
     padding-left: 190px;
     padding-right: 190px;
+    padding-top: 779px;
+    position: relative;
   }
   .feedback-inner {
     display: flex;
+
     /* gap: 150px; */
   }
   .title-container {
