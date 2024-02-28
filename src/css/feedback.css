@@ -72,7 +72,7 @@ textarea {
 }
 .user-name:not(:placeholder-shown):invalid,
 .user-email:not(:placeholder-shown):invalid {
-  border-color: rgb(255, 0, 0);
+  border-color: #ea4335;
 }
 .user-name:not(:placeholder-shown):valid,
 .user-email:not(:placeholder-shown):valid {
@@ -124,19 +124,99 @@ textarea {
   letter-spacing: 0%;
   text-decoration: underline;
 }
+
 .feedback-btn {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 20px 0 18px;
+  width: 100%;
+  cursor: pointer;
   color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #df3d3a;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 2%;
   text-transform: uppercase;
   outline: none;
-  background-color: transparent;
-  border: 1px solid rgb(223, 61, 58);
+  position: relative;
+  vertical-align: middle;
+}
+
+.feedback-btn::before,
+.feedback-btn::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
   width: 100%;
-  padding: 20px 0 18px;
-  cursor: pointer;
+  height: 100%;
+}
+
+.feedback-btn.draw {
+  transition: color 0.25s;
+}
+
+.feedback-btn.draw::before,
+.feedback-btn.draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.feedback-btn.draw::before {
+  top: 0;
+  left: 0;
+}
+
+.feedback-btn.draw::after {
+  bottom: 0;
+  right: 0;
+}
+
+.feedback-btn.draw:hover {
+  color: #b5302d;
+  border-color: transparent;
+}
+
+.feedback-btn.draw:hover::before,
+.feedback-btn.draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback-btn.draw:hover::before {
+  border-top-color: #b5302d;
+  border-right-color: #b5302d;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.feedback-btn.draw:hover::after {
+  border-bottom-color: #b5302d;
+  border-left-color: #b5302d;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+
+.feedback-btn.meet:hover {
+  color: #b5302d;
+}
+
+.feedback-btn.meet::after {
+  top: 0;
+  left: 0;
+}
+
+.feedback-btn.meet:hover::before {
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-right-color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback-btn.meet:hover::after {
+  border-bottom-color: rgba(255, 255, 255, 0.8);
+  border-left-color: rgba(255, 255, 255, 0.8);
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
 }
 
 @media screen and (min-width: 768px) {
