@@ -70,3 +70,57 @@ document
     currentSlide(3);
   });
 
+// FAQ
+const questions = document.querySelectorAll('.FAQ-list-item');
+
+questions.forEach(question => {
+  const hiddenText = question.querySelector('.FAQ-list-text-question');
+  let isOpen = false;
+
+  question.addEventListener('click', () => {
+    if (isOpen) {
+      hiddenText.style.display = 'none';
+    } else {
+      hiddenText.style.display = 'block';
+    }
+    isOpen = !isOpen;
+  });
+});
+
+// Order
+const blackButton = document.querySelector('.order-btn-black');
+const whiteButton = document.querySelector('.order-btn-white');
+const blackImage = document.querySelector('.order-img-black');
+const whiteImage = document.querySelector('.order-img-white');
+const orderIconBlack = document.querySelector('.order-icon-black');
+const orderIconWhite = document.querySelector('.order-icon-white');
+
+blackButton.addEventListener('click', () => {
+  blackImage.style.display = 'block';
+  whiteImage.style.display = 'none';
+  orderIconBlack.style.stroke = '#df3d3a';
+  orderIconWhite.style.stroke = '';
+});
+
+whiteButton.addEventListener('click', () => {
+  blackImage.style.display = 'none';
+  whiteImage.style.display = 'block';
+  orderIconWhite.style.stroke = '#df3d3a';
+  orderIconBlack.style.stroke = '';
+});
+
+// mobile menu
+const menuBtn = document.querySelector('.menu-btn');
+const backdrop = document.querySelector('.backdrop');
+const closeBtn = document.querySelector('.close-btn');
+const body = document.body;
+
+menuBtn.addEventListener('click', () => {
+  backdrop.classList.add('is-open-mobile');
+  body.style.overflow = 'hidden';
+});
+
+closeBtn.addEventListener('click', () => {
+  backdrop.classList.remove('is-open-mobile');
+  body.style.overflow = '';
+});

@@ -22,12 +22,15 @@
   display: flex;
   gap: 24px;
 }
-.order-btn-colorpic {
+.order-btn-black {
   background-color: transparent;
   border: none;
   outline: none;
 }
-.order-icon {
+.order-btn-white {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .order-list {
   margin-top: 32px;
@@ -162,14 +165,11 @@
   .order-list-item:not(:last-child) {
     margin-bottom: 26px;
   }
-  .order-img-black {
+  .order-img-black,
+  .order-img-white {
     position: absolute;
     top: 0;
     right: 0;
-    width: 700px;
-    height: 664px;
-  }
-  .order-img-white {
     width: 700px;
     height: 664px;
   }
