@@ -69,4 +69,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .backdrop {
+    display: none;
+  }
 }
