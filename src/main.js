@@ -24,22 +24,6 @@ function showSlides(n) {
   slides[n - 1].style.display = 'block';
 }
 
-function openModal(modalId, videoSrc) {
-  var modal = document.getElementById(modalId);
-  var videoFrameId = 'videoFrame' + modalId.charAt(modalId.length - 1);
-  var videoFrame = document.getElementById(videoFrameId);
-  videoFrame.src = videoSrc;
-  modal.style.display = 'block';
-}
-
-function closeModal(modalId) {
-  var modal = document.getElementById(modalId);
-  var videoFrameId = 'videoFrame' + modalId.charAt(modalId.length - 1);
-  var videoFrame = document.getElementById(videoFrameId);
-  modal.style.display = 'none';
-  videoFrame.src = '';
-}
-
 document.getElementById('playButton1').addEventListener('click', function () {
   openModal('videoModal1', 'https://www.youtube.com/embed/VqP11Ma_2Fk');
 });
@@ -69,6 +53,30 @@ document
   .addEventListener('click', function () {
     currentSlide(3);
   });
+
+function openModal(modalId, videoSrc) {
+  var modal = document.getElementById(modalId);
+  var videoFrameId = 'videoFrame' + modalId.charAt(modalId.length - 1);
+  var videoFrame = document.getElementById(videoFrameId);
+  videoFrame.src = videoSrc;
+  modal.style.display = 'flex';
+
+  // Додати подію кліку на фоновий шар модального вікна
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) {
+      closeModal(modalId);
+    }
+  });
+}
+
+// Функція, яка закриває модальне вікно та зупиняє відтворення відео
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  var videoFrameId = 'videoFrame' + modalId.charAt(modalId.length - 1);
+  var videoFrame = document.getElementById(videoFrameId);
+  modal.style.display = 'none';
+  videoFrame.src = '';
+}
 
 // FAQ
 const questions = document.querySelectorAll('.FAQ-list-item');
