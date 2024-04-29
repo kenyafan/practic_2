@@ -48,12 +48,12 @@ textarea {
 }
 .user-name {
   margin-bottom: 32px;
-  padding: 3px 20px 16px 3px;
+  padding: 12px 20px 16px 3px;
 }
 
 .user-email {
   margin-bottom: 32px;
-  padding: 3px 20px 16px 3px;
+  padding: 12px 20px 16px 3px;
 }
 .user-message {
   resize: none;
@@ -289,11 +289,11 @@ textarea {
   }
   .user-name {
     margin-bottom: 41px;
-    padding: 3px 20px 18px 3px;
+    padding: 16px 20px 18px 3px;
   }
   .user-email {
     margin-bottom: 41px;
-    padding: 3px 20px 18px 3px;
+    padding: 16px 20px 18px 3px;
   }
   .user-message {
     margin-bottom: 52px;
